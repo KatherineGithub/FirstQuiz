@@ -2,6 +2,8 @@ package com.bignerdranch.android.firstquiz;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.Selection;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.content.Intent;
@@ -30,16 +32,20 @@ public class NextActivity extends AppCompatActivity {
         EditText editText = (EditText) findViewById(R.id.editText4);
         editText.setText(message1);
 
+        //实现光标在文字后面
+        Editable able = editText.getText();
+        int position = able.length();
+        Selection.setSelection(able,position);
+
 
     }
 
+    //捕获后退键
    public void onBackPressed() {
         super.onBackPressed();
         EditText editText4 = (EditText) findViewById(R.id.editText4);
         String message2 = editText4.getText().toString();
         Intent intent1= new Intent(NextActivity.this, QuizActivity.class );
-        //EXTRA_MESSAGE1 = intent1.getString(message2);
-       // intent1.getStringExtra("EXTRA_MESSAGE1");
         intent1.putExtra("EXTRA_MESSAGE1", message2);
         startActivity(intent1);
         finish();

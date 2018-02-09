@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.Selection;
 import android.view.View;
 import android.widget.EditText;
 
@@ -26,6 +28,9 @@ public class QuizActivity extends AppCompatActivity {
             // Capture the layout's TextView and set the string as its text
             EditText editText = (EditText) findViewById(R.id.editText);
             editText.setText(message0);
+           Editable able = editText.getText();
+           int position = able.length();
+           Selection.setSelection(able,position);
 
         }
     }
@@ -87,6 +92,14 @@ public class QuizActivity extends AppCompatActivity {
 
         }
     }*/
+
+    //TextRecyclerView的功能
+    public void Recyclerview(View view) {
+
+        Intent intent = new Intent(QuizActivity.this, RecyclerviewActivity.class);
+        startActivity(intent);
+        finish();
+    }
 
 
 

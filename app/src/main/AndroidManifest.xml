@@ -21,6 +21,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".QuizActivity" />
         </activity>
+        <activity android:name=".RecyclerviewActivity" />
+        <activity android:name=".ItemShowActivity"></activity>
     </application>
 
 </manifest>

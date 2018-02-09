@@ -6,4 +6,16 @@
     android:layout_height="match_parent"
     tools:context="com.bignerdranch.android.firstquiz.ItemShowActivity">
 
+
+    <EditText
+        android:id="@+id/itemShow"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="TextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp" />
+
 </android.support.constraint.ConstraintLayout>
