@@ -23,7 +23,7 @@ public class QuizActivity extends AppCompatActivity {
 
 
         // Get the Intent that started this activity and extract the string
-       if (intent0.hasExtra("EXTRA_MESSAGE1")) {
+       //if (intent0.hasExtra("EXTRA_MESSAGE1")) {
             String message0 = intent0.getStringExtra("EXTRA_MESSAGE1");
             // Capture the layout's TextView and set the string as its text
             EditText editText = (EditText) findViewById(R.id.editText);
@@ -32,7 +32,7 @@ public class QuizActivity extends AppCompatActivity {
            int position = able.length();
            Selection.setSelection(able,position);
 
-        }
+        //}
     }
 
     //submit的功能

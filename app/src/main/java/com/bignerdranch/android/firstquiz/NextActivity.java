@@ -24,7 +24,6 @@ public class NextActivity extends AppCompatActivity {
 
         // Get the Intent that started this activity and extract the string
         message1 = intent.getStringExtra("EXTRA_MESSAGE");
-
         TextView textView = (TextView) findViewById(R.id.textView2);
         textView.setText("Hello,  "+ message1+"!");
 

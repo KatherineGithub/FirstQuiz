@@ -7,8 +7,8 @@ android {
         applicationId "com.bignerdranch.android.firstquiz"
         minSdkVersion 16
         targetSdkVersion 25
-        versionCode 4
-        versionName "1.3"
+        versionCode 5
+        versionName "1.4"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -26,9 +26,11 @@ dependencies {
     })
     //Toolbar
     //RecyclerView
-
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:recyclerview-v7:25.3.1'
     testCompile 'junit:junit:4.12'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.0-RC4'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.0-RC1'
+
 }
